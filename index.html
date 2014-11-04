@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<div class="title">
+			CRYPTO-STEGANOGRAPHY
+		</div>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+
+	<body ng-app="">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+		<div class="main_wrapper">
+			<div class="small_wrapper" ng-init="what_span=true" ng-click="what_span = !what_span">
+				<span class="item_info">WHAT</span>
+				<p class="info" ng-hide="what_span">
+					It's a nice and secure way to storage your files secretely, in a way the data is only retrieved using a password
+				</p>
+			</div>
+			<div class="small_wrapper" ng-click="readme_span = !readme_span">
+				<span class="item_info">README</span>
+				<p class="info" ng-init="readme_span=true" ng-hide="readme_span">
+					You can read an article i wrote about it here.
+					<a href="show_article">Read article &#62;</a>
+					The article is in portuguese.
+				</p>
+			</div>
+			<div class="small_wrapper" ng-init="who_span=true" ng-click="who_span = !who_span">
+				<span class="item_info">WHO</span>
+				<p class="info" ng-hide="who_span">
+					Designed by Vitor Costa
+				</p>
+			</div>
+			<div class="small_wrapper" ng-init="download_div=true" ng-click="download_div = !download_div">
+				<span class="item_info">DOWNLOAD</span>
+				<div class="info" ng-hide="download_div" ng-include="'download_tmpl.html'"></div>
+			</div>
+		</div>
+
+		
+
+	</body>
+
+</html>
