@@ -1,0 +1,3 @@
+[submodule "crypto-stego-app"]
+	path = crypto-stego-app
+	url = https://github.com/vitor-costa/Web-App-Project.git
