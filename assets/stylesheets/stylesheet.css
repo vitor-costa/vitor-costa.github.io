@@ -8,7 +8,9 @@ body {
 	text-align: center;
 	padding-bottom: 20px;
 }
-
+.item_info {
+	cursor: pointer;
+}
 .item_info:hover{
 	font-weight: bold;
 }

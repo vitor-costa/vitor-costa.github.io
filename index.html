@@ -19,6 +19,12 @@
 					It's a nice and secure way to storage your files secretely, in a way the data is only retrieved using a password
 				</p>
 			</div>
+			<div class="small_wrapper" ng-init="try_span=true" ng-click="try_span = !try_span">
+				<span class="item_info">TRY IT!</span>
+				<p class="info" ng-hide="try_span">
+					Try our new <a href="/crypto-stego-app">app</a>! It's a simplified version of the method. You can hide a text message inside a picture and use it to safely communicate or storage your secrets.
+				</p>
+			</div>
 			<div class="small_wrapper" ng-click="readme_span = !readme_span">
 				<span class="item_info">README</span>
 				<p class="info" ng-init="readme_span=true" ng-hide="readme_span">
